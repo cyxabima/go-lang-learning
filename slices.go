@@ -20,3 +20,12 @@ func main() {
 // there are two functions cap() and len()
 // so  len return the current size of slice
 // cap() returns the max length of slice before reallocation of array is necessary
+
+// A slice is not the data itself.
+// It's a small descriptor (header) that contains:
+
+// Pointer → points to the first element of the underlying array
+
+// Length → number of accessible elements
+
+// Capacity → max elements until reallocation is needed
